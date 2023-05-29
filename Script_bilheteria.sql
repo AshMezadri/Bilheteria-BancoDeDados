@@ -18,12 +18,14 @@ CREATE TABLE IF NOT EXISTS `Clientes` (
 
 
 CREATE TABLE IF NOT EXISTS `Produtoras` (
-  `id_produtora` BIGINT NOT NULL,
+  `id_produtora` BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `produtor` VARCHAR(45) NOT NULL,
   `pais` VARCHAR(45) NOT NULL,
   `nome_estudio` VARCHAR(45) NOT NULL,
-  `cnpj` VARCHAR(45) NULL,
+  `cnpj` VARCHAR(45) NULL,  
   PRIMARY KEY (`id_produtora`))
+
+
 ;
 
 
@@ -105,5 +107,31 @@ insert into Clientes (cpf_cliente, nome, sobrenome, email) values (2752760761, '
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (1892785644, 'Jase', 'Menilove', 'jmeniloven@ucsd.edu');
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (4216579388, 'Rakel', 'Skace', 'rskaceo@nifty.com');
 
+
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Aubrette Gelder', 'Cameroon', 'Reinger Inc', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Hugues Moodie', 'China', 'Wisoky Inc', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Elyn Fosdyke', 'Yemen', 'Labadie Inc', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Sena Haggerstone', 'Portugal', 'Crona, Gulgowski and Jacobson', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Druci Spacey', 'Sweden', 'Christiansen, Ullrich and Thiel', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Huntley Derrick', 'Nigeria', 'Okuneva, Kshlerin and Friesen', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Allys Sandwich', 'Costa Rica', 'Sanford LLC', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Danila Tolwood', 'Mongolia', 'Murazik, Pagac and Romaguera', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Berkley Harnor', 'Norway', 'Hyatt-Hauck', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Carie Dabnot', 'Russia', 'Bailey and Sons', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Scotty Lessmare', 'Palestinian Territory', 'Ziemann, Schmeler and Gutkowski', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Cordy Keyson', 'China', 'Bergnaum Group', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Terrance Yakovich', 'Tanzania', 'Leuschke, Johnson and Koepp', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kin Sirkett', 'China', 'Koss-Crona', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kamillah Tiebe', 'Russia', 'Rolfson Group', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Vern MacCartan', 'United States', 'Stanton and Sons', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Vonnie Symons', 'Indonesia', 'Hermiston-Abbott', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Tobias Simmonett', 'Brazil', 'Stamm-Rosenbaum', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Robenia Nettles', 'Indonesia', 'Schuster Group', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kacy Byas', 'Brazil', 'Thompson LLC', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Tommie Fratson', 'Philippines', 'Beer-Wilderman', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Fleming Ferriman', 'Saint Kitts and Nevis', 'Mann-Wolff', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kelley Gabbott', 'Norway', 'Zemlak, Kub and Boyer', 1000000000000);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Thaine Mattingley', 'China', 'Ferry-Marquardt', 999999999999);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Georges Brabben', 'Poland', 'Crooks-Kling', 999999999999);
 
 
