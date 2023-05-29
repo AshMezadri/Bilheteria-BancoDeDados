@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `Produtoras` (
 
 
 CREATE TABLE IF NOT EXISTS `Filmes` (
-  `id_filme` INT NOT NULL,
+  `id_filme` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `nome_filme` VARCHAR(45) NOT NULL,
   `duracao` TIME NOT NULL,
   `traducao_nome` VARCHAR(45) NOT NULL,
@@ -136,80 +136,28 @@ insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Georges Brab
 
 
 
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (1, 'Holes in My Shoes', '2h 40m', 'Documentary', 10);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (2, 'Have Dreams, Will Travel', '2h 21m', 'Drama|Romance', 16);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (3, 'Kinbaku', '1h 38m', 'Documentary', 12);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (4, 'Kahaani', '3h 11m', 'Crime|Drama|Thriller', 10);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (5, 'Reservoir Dogs', '2h 9m', 'Crime|Mystery|Thriller', 16);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (6, 'History Is Made at Night', '1h 20m', 'Drama|Romance', 18);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (7, 'Princess and the Pony', '1h 50m', 'Children|Drama', 14);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (8, 'Carpetbaggers, The', '2h 10m', 'Drama', 14);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (9, 'Smilla''s Sense of Snow', '1h 45m', 'Drama|Thriller', 12);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (10, 'Crazy/Beautiful', '2h 35m', 'Drama|Romance', 14);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (11, 'Face of Another, The (Tanin no kao)', '2h 20m', 'Drama|Sci-Fi', 10);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (12, 'Moon in the Gutter, The (La lune dans le caniveau)', '1h 56m', 'Drama', 16);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (13, 'Udaan', '2h 10m', 'Drama', 16);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (14, 'Christmas in August (Palwolui Christmas)', '2h 17m', 'Drama|Romance', 10);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (15, 'Hear No Evil', '1h 45m', 'Thriller', 10);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (16, 'Charleston', '2h 59m', 'Comedy|Crime', 18);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (17, 'Anderson Tapes, The', '1h 30m', 'Crime|Drama|Thriller', 18);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (18, 'Mummy, The', '2h 15m', 'Action|Adventure|Comedy|Fantasy|Horror|Thriller', 16);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (19, 'Mr. Magorium''s Wonder Emporium', '1h 49m', 'Children|Comedy|Fantasy', 14);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (20, 'Dry Summer (Susuz yaz) (Reflections)', '2h 13m', 'Drama', 14);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (21, 'Drummer-Crab (Le Crabe-Tambour)', '3h 10m', 'Adventure|Drama|War',107);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (22, 'Yertle the Turtle and Other Stories', '1h 37m', 'Animation|Children', 10);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (23, 'Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (24, 'Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
-insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classiicacao_etaria) values (25, 'First Love', '2h 27m', 'Comedy|Musical', 12);
-
-insert into Sessoes (horario, sala) values ('22:46', 1);
-insert into Sessoes (horario, sala) values ('17:01', 2);
-insert into Sessoes (horario, sala) values ('12:37', 3);
-insert into Sessoes (horario, sala) values ('19:04', 1);
-insert into Sessoes (horario, sala) values ('13:29', 4);
-insert into Sessoes (horario, sala) values ('16:37', 3);
-insert into Sessoes (horario, sala) values ('13:40', 1);
-insert into Sessoes (horario, sala) values ('12:49', 2);
-insert into Sessoes (horario, sala) values ('16:46', 5);
-insert into Sessoes (horario, sala) values ('22:20', 5);
-insert into Sessoes (horario, sala) values ('12:32', 5);
-insert into Sessoes (horario, sala) values ('14:50', 6);
-insert into Sessoes (horario, sala) values ('15:58', 1);
-insert into Sessoes (horario, sala) values ('22:40', 6);
-insert into Sessoes (horario, sala) values ('16:30', 7);
-insert into Sessoes (horario, sala) values ('19:55', 6);
-insert into Sessoes (horario, sala) values ('16:30', 1);
-insert into Sessoes (horario, sala) values ('22:32', 7);
-insert into Sessoes (horario, sala) values ('15:59', 8);
-insert into Sessoes (horario, sala) values ('20:37', 8);
-insert into Sessoes (horario, sala) values ('19:46', 7);
-insert into Sessoes (horario, sala) values ('12:08', 7);
-insert into Sessoes (horario, sala) values ('16:09', 4);
-insert into Sessoes (horario, sala) values ('17:43', 6);
-insert into Sessoes (horario, sala) values ('18:28', 8);
-
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (1, 'Inteiro', 25, 1);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (2, 'Meia-entrada', 15, 1);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (3, 'Inteiro', 25, 3);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (4, 'Inteiro', 25, 5);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (5, 'Inteiro', 25, 2);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (6, 'Meia-entrada', 15, 7);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (7, 'Inteiro', 25, 3);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (8, 'Meia-entrada', 15, 7);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (9, 'Meia-entrada', 15, 6);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (10, 'Meia-entrada', 15, 5);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (11, 'Meia-entrada', 15, 4);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (12, 'Inteiro', 25, 8);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (13, 'Inteiro', 25, 8);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (14, 'Inteiro', 25, 6);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (15, 'Meia-entrada', 15, 4);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (16, 'Inteiro', 25, 7);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (17, 'Inteiro', 25, 4);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (18, 'Meia-entrada', 15, 1);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (19, 'Inteiro', 25, 4);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (20, 'Meia-entrada', 15, 7);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (21, 'Inteiro', 25, 8);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (22, 'Inteiro', 25, 6);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (23, 'Inteiro', 25, 8);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (24, 'Inteiro', 25, 4);
-insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (25, 'Inteiro', 25, 7);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Holes in My Shoes', '2h 40m', 'Documentary', 10);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Have Dreams, Will Travel', '2h 21m', 'Drama|Romance', 16);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Kinbaku', '1h 38m', 'Documentary', 12);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Kahaani', '3h 11m', 'Crime|Drama|Thriller', 10);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Reservoir Dogs', '2h 9m', 'Crime|Mystery|Thriller', 16);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('History Is Made at Night', '1h 20m', 'Drama|Romance', 18);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Princess and the Pony', '1h 50m', 'Children|Drama', 14);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Carpetbaggers, The', '2h 10m', 'Drama', 14);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Smilla''s Sense of Snow', '1h 45m', 'Drama|Thriller', 12);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Crazy/Beautiful', '2h 35m', 'Drama|Romance', 14);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Face of Another, The (Tanin no kao)', '2h 20m', 'Drama|Sci-Fi', 10);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Moon in the Gutter, The (La lune dans le caniveau)', '1h 56m', 'Drama', 16);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Udaan', '2h 10m', 'Drama', 16);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Christmas in August (Palwolui Christmas)', '2h 17m', 'Drama|Romance', 10);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Hear No Evil', '1h 45m', 'Thriller', 10);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Charleston', '2h 59m', 'Comedy|Crime', 18);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Anderson Tapes, The', '1h 30m', 'Crime|Drama|Thriller', 18);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Mummy, The', '2h 15m', 'Action|Adventure|Comedy|Fantasy|Horror|Thriller', 16);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Mr. Magorium''s Wonder Emporium', '1h 49m', 'Children|Comedy|Fantasy', 14);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Dry Summer (Susuz yaz) (Reflections)', '2h 13m', 'Drama', 14);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Drummer-Crab (Le Crabe-Tambour)', '3h 10m', 'Adventure|Drama|War',107);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Yertle the Turtle and Other Stories', '1h 37m', 'Animation|Children', 10);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('First Love', '2h 27m', 'Comedy|Musical', 12);
