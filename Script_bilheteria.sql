@@ -160,3 +160,41 @@ insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) valu
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('First Love', '2h 27m', 'Comedy|Musical', 12);
+
+
+UPDATE Clientes set nome='Stella',sobrenome= 'Bradbrook', email= 'sbradbrook0@wikipedia.org' Where cpf_cliente = 2192522278;
+UPDATE Clientes set nome='Conny',sobrenome= 'Schorah', email= 'cschorah1@gravatar.com' Where cpf_cliente = 2478840783;
+UPDATE Clientes set nome='Bicheno',sobrenome= 'Wat', email= 'wbicheno2@newyorker.com' Where cpf_cliente = 4299279237;
+UPDATE Clientes set nome='Reinold',sobrenome= 'WaWilliamsont', email= 'rwilliamson3@ameblo.jp' Where cpf_cliente = 1251259305;
+UPDATE Clientes set nome='Emmalynn',sobrenome= 'Exley', email= 'eexley4@state.tx.us' Where cpf_cliente = 4924545468;
+UPDATE Clientes set nome='Roxy',sobrenome= 'Dawidowicz', email= 'rdawidowicz5@domainmarket.com' Where cpf_cliente = 7117366372;
+UPDATE Clientes set nome='Kristi',sobrenome= 'Stubbe', email= 'kstubbe6@1688.com' Where cpf_cliente = 5291283376;
+UPDATE Clientes set nome='Brig',sobrenome= 'Bariball', email= 'bbariball7@earthlink.net' Where cpf_cliente = 6940730841;
+UPDATE Clientes set nome='Arv',sobrenome= 'Bourget', email= 'abourget8@ow.ly' Where cpf_cliente = 289498763;
+UPDATE Clientes set nome='Uriah',sobrenome= 'Haysey', email= 'uhaysey9@ustream.tv' Where cpf_cliente = 1073437253;
+
+ DELETE FROM Clientes WHERE cpf_cliente = 2192522278;
+ DELETE FROM Clientes WHERE cpf_cliente = 2478840783;
+ DELETE FROM Clientes WHERE cpf_cliente = 4299279237;
+ DELETE FROM Clientes WHERE cpf_cliente = 7117366372;
+ DELETE FROM Clientes WHERE cpf_cliente = 6038105963;
+
+
+
+UPDATE Produtoras set produtor='Jocelyn Dingate' , pais='Indonesia' WHERE cnpj= 71967471012;
+UPDATE Produtoras set produtor='Aurie Grinnikov' , pais='Slovenia' WHERE cnpj= 68777958193;
+UPDATE Produtoras set produtor='Sonni Lexa' , pais='Portugal' WHERE cnpj= 65955405334;
+UPDATE Produtoras set produtor='Kristoffer Frew' , pais='Sweden' WHERE cnpj= 40722162005;
+UPDATE Produtoras set produtor='Mariam Haughey' , pais='Kazakhstan' WHERE cnpj= 33911209548;
+UPDATE Produtoras set produtor='Mile Bidewell' , pais='Serbia' WHERE cnpj= 19146771242;
+UPDATE Produtoras set produtor='Felipa Elderton' , pais='China' WHERE cnpj= 64497943603;
+UPDATE Produtoras set produtor='Vinny MacKenney' , pais='Indonesia' WHERE cnpj= 99416853176;
+UPDATE Produtoras set produtor='Kerby Ciccarelli' , pais='Sweden' WHERE cnpj= 37134067527;
+UPDATE Produtoras set produtor='Logan Treherne' , pais='France' WHERE cnpj= 14707903858;
+
+  DELETE FROM Produtoras WHERE cnpj = 71967471012;
+  DELETE FROM Produtoras WHERE cnpj = 68777958193;
+  DELETE FROM Produtoras WHERE cnpj = 65955405334;
+  DELETE FROM Produtoras WHERE cnpj = 19146771242;
+  DELETE FROM Produtoras WHERE cnpj = 14707903858;
+
