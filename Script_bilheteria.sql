@@ -108,32 +108,31 @@ insert into Clientes (cpf_cliente, nome, sobrenome, email) values (1892785644, '
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (4216579388, 'Rakel', 'Skace', 'rskaceo@nifty.com');
 
 
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Aubrette Gelder', 'Cameroon', 'Reinger Inc', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Hugues Moodie', 'China', 'Wisoky Inc', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Elyn Fosdyke', 'Yemen', 'Labadie Inc', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Sena Haggerstone', 'Portugal', 'Crona, Gulgowski and Jacobson', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Druci Spacey', 'Sweden', 'Christiansen, Ullrich and Thiel', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Huntley Derrick', 'Nigeria', 'Okuneva, Kshlerin and Friesen', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Allys Sandwich', 'Costa Rica', 'Sanford LLC', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Danila Tolwood', 'Mongolia', 'Murazik, Pagac and Romaguera', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Berkley Harnor', 'Norway', 'Hyatt-Hauck', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Carie Dabnot', 'Russia', 'Bailey and Sons', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Scotty Lessmare', 'Palestinian Territory', 'Ziemann, Schmeler and Gutkowski', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Cordy Keyson', 'China', 'Bergnaum Group', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Terrance Yakovich', 'Tanzania', 'Leuschke, Johnson and Koepp', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kin Sirkett', 'China', 'Koss-Crona', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kamillah Tiebe', 'Russia', 'Rolfson Group', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Vern MacCartan', 'United States', 'Stanton and Sons', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Vonnie Symons', 'Indonesia', 'Hermiston-Abbott', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Tobias Simmonett', 'Brazil', 'Stamm-Rosenbaum', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Robenia Nettles', 'Indonesia', 'Schuster Group', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kacy Byas', 'Brazil', 'Thompson LLC', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Tommie Fratson', 'Philippines', 'Beer-Wilderman', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Fleming Ferriman', 'Saint Kitts and Nevis', 'Mann-Wolff', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Kelley Gabbott', 'Norway', 'Zemlak, Kub and Boyer', 1000000000000);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Thaine Mattingley', 'China', 'Ferry-Marquardt', 999999999999);
-insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Georges Brabben', 'Poland', 'Crooks-Kling', 999999999999);
-
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Hinda Keam', 'China', 'McGlynn-Flatley', 71967471012);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Rosita Smithson', 'Greece', 'Durgan, Hyatt and Feest', 68777958193);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Pen Shaughnessy', 'Nigeria', 'Bradtke, Wiegand and Von', 65955405334);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Aylmar Phlippi', 'Indonesia', 'Hane-Monahan', 40722162005);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Shawn Soro', 'Poland', 'Thompson LLC', 37951503966);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Willabella Febvre', 'Swaziland', 'Lowe-Hickle', 79687151975);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Ulrikaumeko Shipsey', 'China', 'Kuhlman Inc', 91508861614);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Jermaine Lewerenz', 'Finland', 'Bartoletti-Howell', 41580720317);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Nana Nurden', 'China', 'O''Keefe LLC', 69894912195);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Stevie Pantry', 'Indonesia', 'Stiedemann-Rempel', 57721070455);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Minerva Fearick', 'China', 'Kshlerin Inc', 90261831226);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Goran Teliga', 'Peru', 'Hegmann, Jenkins and DuBuque', 73377297697);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Keelia Downer', 'Philippines', 'Thompson and Sons', 22941549649);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Joachim Bard', 'Sweden', 'McGlynn-Stanton', 33911209548);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Wilt Maytom', 'Indonesia', 'Dietrich-McDermott', 16078829259);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Junia Catherick', 'Peru', 'Kemmer, Cronin and MacGyver', 86291524655);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Aube Clyma', 'Portugal', 'Graham and Sons', 69026158561);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Domenico Sedgemond', 'China', 'Bruen Inc', 19146771242);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Monroe Porritt', 'Ireland', 'O''Keefe, Bartell and Greenholt', 64497943603);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Melanie Lossman', 'Indonesia', 'Shields, Daniel and Leffler', 31681700234);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Yves Rickis', 'Russia', 'Turner, Wilderman and Klein', 43187256535);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Samara Comi', 'Philippines', 'Hintz, Hansen and Krajcik', 74024714075);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Electra Lindsey', 'Poland', 'Doyle, Lebsack and Lehner', 99416853176);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Happy Johns', 'Portugal', 'Harber-Cremin', 37134067527);
+insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Norton Meriguet', 'China', 'Lind-Rutherford', 14707903858);
 
 
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Holes in My Shoes', '2h 40m', 'Documentary', 10);
