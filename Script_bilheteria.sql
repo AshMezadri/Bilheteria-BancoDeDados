@@ -216,6 +216,7 @@ SELECT * FROM Produtoras;
 SELECT COUNT(*) FROM Filmes;
 SELECT * FROM Filmes;
 
+-- updates
 
 -- update clientes
 UPDATE Clientes set nome='Stella',sobrenome= 'Bradbrook', email= 'sbradbrook0@wikipedia.org' Where cpf_cliente = 2192522278;
@@ -229,13 +230,6 @@ UPDATE Clientes set nome='Brig',sobrenome= 'Bariball', email= 'bbariball7@earthl
 UPDATE Clientes set nome='Arv',sobrenome= 'Bourget', email= 'abourget8@ow.ly' Where cpf_cliente = 289498763;
 UPDATE Clientes set nome='Uriah',sobrenome= 'Haysey', email= 'uhaysey9@ustream.tv' Where cpf_cliente = 1073437253;
 
--- delete from clientes
- DELETE FROM Clientes WHERE cpf_cliente = 2192522278;
- DELETE FROM Clientes WHERE cpf_cliente = 2478840783;
- DELETE FROM Clientes WHERE cpf_cliente = 4299279237;
- DELETE FROM Clientes WHERE cpf_cliente = 7117366372;
- DELETE FROM Clientes WHERE cpf_cliente = 6038105963;
-
 -- update proutoras
 UPDATE Produtoras set produtor='Jocelyn Dingate' , pais='Indonesia' WHERE id_produtora=1;
 UPDATE Produtoras set produtor='Aurie Grinnikov' , pais='Slovenia' WHERE id_produtora=2;
@@ -248,14 +242,7 @@ UPDATE Produtoras set produtor='Vinny MacKenney' , pais='Indonesia' WHERE id_pro
 UPDATE Produtoras set produtor='Kerby Ciccarelli' , pais='Sweden' WHERE id_produtora=9;
 UPDATE Produtoras set produtor='Logan Treherne' , pais='France' WHERE id_produtora=10;
 
--- delete from produtoras
-  DELETE FROM Produtoras WHERE  id_produtora=1;
-  DELETE FROM Produtoras WHERE id_produtora=4;
-  DELETE FROM Produtoras WHERE id_produtora=8;
-  DELETE FROM Produtoras WHERE  id_produtora=10;
-  DELETE FROM Produtoras WHERE id_produtora=6;
-  
-  -- update filmes
+-- update filmes
 UPDATE Filmes set nome_filme = 'Shrek', duracao = '2h 10m', genero_filme = 'Animation', classificacao_etaria = '12' WHERE id_filme = 1;
 UPDATE Filmes set nome_filme = 'Barbie e o Castelo de Diamantes', duracao = '1h 10m', genero_filme = 'Animation|Adventure', classificacao_etaria = '10' WHERE id_filme = 2;
 UPDATE Filmes set nome_filme = 'Cinderela', duracao = '1h 12m', genero_filme = 'Animation|Romance', classificacao_etaria = '12' WHERE id_filme = 3;
@@ -267,15 +254,7 @@ UPDATE Filmes set nome_filme = 'Monster High', duracao = '1h 29m', genero_filme 
 UPDATE Filmes set nome_filme = 'A Bela e a Fera', duracao = '1h 17m', genero_filme = 'Romance', classificacao_etaria = '12' WHERE id_filme = 9;
 UPDATE Filmes set nome_filme = 'O Gato de Botas', duracao = '2h 20m', genero_filme = 'Animation|Adventure', classificacao_etaria = '12' WHERE id_filme = 10;
 
-  -- delete from filmes
-  
-  DELETE FROM Filmes WHERE id_filme = 11;
-  DELETE FROM Filmes WHERE id_filme = 12;
-  DELETE FROM Filmes WHERE id_filme = 13;
-  DELETE FROM Filmes WHERE id_filme = 14;
-  DELETE FROM Filmes WHERE id_filme = 15;
-  
-  -- update sessoes
+-- update sessoes
 UPDATE Sessoes set horario= '22:45', sala= 2  Where id_sessao= 1 ;
 UPDATE Sessoes set horario= '17:00', sala= 1  Where id_sessao= 2 ;
 UPDATE Sessoes set horario= '12:30', sala= 4  Where id_sessao= 3 ;
@@ -287,9 +266,35 @@ UPDATE Sessoes set horario= '12:30', sala= 8  Where id_sessao= 8 ;
 UPDATE Sessoes set horario= '16:40', sala= 3  Where id_sessao= 9 ;
 UPDATE Sessoes set horario= '12:00', sala= 6  Where id_sessao= 10 ;
 
--- delete sessoes
-DELETE FROM Sessoes WHERE id_sessao = 11;
-DELETE FROM Sessoes WHERE id_sessao = 12;
-DELETE FROM Sessoes WHERE id_sessao= 13;
-DELETE FROM Sessoes WHERE id_sessao = 14;
-DELETE FROM Sessoes WHERE id_sessao = 15;
+-- deletes
+
+-- delete from produtoras
+  DELETE FROM Produtoras WHERE  id_produtora=1;
+  DELETE FROM Produtoras WHERE id_produtora=4;
+  DELETE FROM Produtoras WHERE id_produtora=8;
+  DELETE FROM Produtoras WHERE  id_produtora=10;
+  DELETE FROM Produtoras WHERE id_produtora=6;
+  
+  -- delete from clientes
+ DELETE FROM Clientes WHERE cpf_cliente = 2192522278;
+ DELETE FROM Clientes WHERE cpf_cliente = 2478840783;
+ DELETE FROM Clientes WHERE cpf_cliente = 4299279237;
+ DELETE FROM Clientes WHERE cpf_cliente = 7117366372;
+ DELETE FROM Clientes WHERE cpf_cliente = 6038105963;
+
+
+  -- delete from filmes
+  
+  DELETE FROM Filmes WHERE id_filme = 11;
+  DELETE FROM Filmes WHERE id_filme = 12;
+  DELETE FROM Filmes WHERE id_filme = 13;
+  DELETE FROM Filmes WHERE id_filme = 14;
+  DELETE FROM Filmes WHERE id_filme = 15;
+  
+
+  -- delete sessoes
+  DELETE FROM Sessoes WHERE id_sessao = 11;
+  DELETE FROM Sessoes WHERE id_sessao = 12;
+  DELETE FROM Sessoes WHERE id_sessao= 13;
+  DELETE FROM Sessoes WHERE id_sessao = 14;
+  DELETE FROM Sessoes WHERE id_sessao = 15;
