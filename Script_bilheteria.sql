@@ -1,3 +1,4 @@
+
 -- exclui o banco e dados
 Drop database if exists bilheteria; 
 
@@ -242,4 +243,23 @@ UPDATE Produtoras set produtor='Logan Treherne' , pais='France' WHERE cnpj= 1470
   DELETE FROM Produtoras WHERE cnpj = 65955405334;
   DELETE FROM Produtoras WHERE cnpj = 19146771242;
   DELETE FROM Produtoras WHERE cnpj = 14707903858;
+  
+  -- update filmes
+  DELETE FROM Filmes WHERE
+  DELETE FROM Filmes WHERE
+  DELETE FROM Filmes WHERE
+  DELETE FROM Filmes WHERE
+  DELETE FROM Filmes WHERE
+  
+  -- delete from filmes
+UPDATE Filmes set nome_filme = 'Tartarugas Ninja',  duracao = '1h 40m', genero_filme = 'Adventure', classificacao_etaria = 10 WHERE ;
+UPDATE Filmes set nome_filme = 'Monster High',  duracao = '1h 56m', genero_filme = 'Drama', classificacao_etaria = 12 WHERE ;
+UPDATE Filmes set nome_filme = 'Shrek 2',  duracao = '1h 30m', genero_filme = 'Adventure', classificacao_etaria = 12 WHERE ;
+UPDATE Filmes set nome_filme = 'Barbie e o Segredo Das Fadas',  duracao = '1h 20m', genero_filme = 'Animation|Children', classificacao_etaria = 10 WHERE ;
+UPDATE Filmes set nome_filme = 'Tinker Bell',  duracao = '1h 45m', genero_filme = 'Animation|Children', classificacao_etaria = 10 WHERE ;
+UPDATE Filmes set nome_filme = 'Cinderela',  duracao = '1h 16m', genero_filme = 'Romance|Drama', classificacao_etaria = 10 WHERE ;
+UPDATE Filmes set nome_filme = 'A Bela e a Fera',  duracao = '1h 11m', genero_filme = 'Romance', classificacao_etaria = 10 WHERE ;
+UPDATE Filmes set nome_filme = 'Hereditário',  duracao = '2h 12m', genero_filme = 'Horror|Thriller', classificacao_etaria = 18 WHERE ;
+UPDATE Filmes set nome_filme = 'Garota Exemplar',  duracao = '1h 50m', genero_filme = 'Crime|Drama|Thriller', classificacao_etaria = 18 WHERE ;
+UPDATE Filmes set nome_filme = 'It a Coisa',  duracao = '2h 27m', genero_filme = 'Horror', classificacao_etaria = 16 WHERE ;
 
