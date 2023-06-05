@@ -216,6 +216,10 @@ SELECT * FROM Produtoras;
 SELECT COUNT(*) FROM Filmes;
 SELECT * FROM Filmes;
 
+SELECT COUNT(*) FROM Sessoes;
+Select * From Sessoes order by id_sessao;
+
+
 -- updates
 
 -- update clientes
