@@ -205,6 +205,18 @@ insert into Sessoes (horario, sala) values ('16:09', 4);
 insert into Sessoes (horario, sala) values ('17:43', 6);
 insert into Sessoes (horario, sala) values ('18:28', 8);
 
+-- selects
+
+SELECT COUNT(*) FROM Clientes; 
+SELECT * FROM Clientes;
+
+SELECT COUNT(*) FROM Produtoras; 
+SELECT * FROM Produtoras;
+
+
+
+
+
 -- update clientes
 UPDATE Clientes set nome='Stella',sobrenome= 'Bradbrook', email= 'sbradbrook0@wikipedia.org' Where cpf_cliente = 2192522278;
 UPDATE Clientes set nome='Conny',sobrenome= 'Schorah', email= 'cschorah1@gravatar.com' Where cpf_cliente = 2478840783;
