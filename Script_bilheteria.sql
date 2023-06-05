@@ -12,10 +12,8 @@ CREATE TABLE IF NOT EXISTS `Clientes` (
   `email` VARCHAR(45) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `sobrenome` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`cpf_cliente`))
-;
-
-
+  PRIMARY KEY (`cpf_cliente`)
+);
 
 CREATE TABLE IF NOT EXISTS `Produtoras` (
   `id_produtora` BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -23,12 +21,8 @@ CREATE TABLE IF NOT EXISTS `Produtoras` (
   `pais` VARCHAR(45) NOT NULL,
   `nome_estudio` VARCHAR(45) NOT NULL,
   `cnpj` VARCHAR(45) NULL,  
-  PRIMARY KEY (`id_produtora`))
-
-
-;
-
-
+  PRIMARY KEY (`id_produtora`)
+);
 
 CREATE TABLE IF NOT EXISTS `Filmes` (
   `id_filme` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -42,9 +36,7 @@ CREATE TABLE IF NOT EXISTS `Filmes` (
   CONSTRAINT `fk_Filmes_Produtoras1`
     FOREIGN KEY (`Produtoras_id_produtora`)
     REFERENCES `Produtoras` (`id_produtora`)
-    );
-
-
+);
 
 CREATE TABLE IF NOT EXISTS `Sessoes` (
   `id_sessao` INT NOT NULL,
@@ -56,9 +48,7 @@ CREATE TABLE IF NOT EXISTS `Sessoes` (
   CONSTRAINT `fk_Sessoes_Filmes1`
     FOREIGN KEY (`Filmes_id_filme` , `Filmes_Produtoras_id_produtora`)
     REFERENCES `Filmes` (`id_filme` , `Produtoras_id_produtora`)
-   
 );
-
 
 CREATE TABLE IF NOT EXISTS `Ingressos` (
   `id_ingresso` INT NOT NULL,
@@ -78,9 +68,9 @@ CREATE TABLE IF NOT EXISTS `Ingressos` (
   CONSTRAINT `fk_Ingressos_Sessoes1`
     FOREIGN KEY (`Sessoes_id_sessao` , `Sessoes_Filmes_id_filme` , `Sessoes_Filmes_Produtoras_id_produtora`)
     REFERENCES `Sessoes` (`id_sessao` , `Filmes_id_filme` , `Filmes_Produtoras_id_produtora`)
-   )
-;
+);
 
+-- insert into clientes
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (2192522278, 'Bette-ann', 'Bernard', 'bbernard0@netvibes.com');
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (2478840783, 'Klement', 'Donoher', 'kdonoher1@rediff.com');
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (4299279237, 'Nobe', 'Devaney', 'ndevaney2@over-blog.com');
@@ -107,7 +97,7 @@ insert into Clientes (cpf_cliente, nome, sobrenome, email) values (2752760761, '
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (1892785644, 'Jase', 'Menilove', 'jmeniloven@ucsd.edu');
 insert into Clientes (cpf_cliente, nome, sobrenome, email) values (4216579388, 'Rakel', 'Skace', 'rskaceo@nifty.com');
 
-
+-- insert into produtoras
 insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Hinda Keam', 'China', 'McGlynn-Flatley', 71967471012);
 insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Rosita Smithson', 'Greece', 'Durgan, Hyatt and Feest', 68777958193);
 insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Pen Shaughnessy', 'Nigeria', 'Bradtke, Wiegand and Von', 65955405334);
@@ -134,7 +124,7 @@ insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Electra Lind
 insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Happy Johns', 'Portugal', 'Harber-Cremin', 37134067527);
 insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Norton Meriguet', 'China', 'Lind-Rutherford', 14707903858);
 
-
+-- insert into ilmes
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Holes in My Shoes', '2h 40m', 'Documentary', 10);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Have Dreams, Will Travel', '2h 21m', 'Drama|Romance', 16);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Kinbaku', '1h 38m', 'Documentary', 12);
@@ -161,7 +151,7 @@ insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) valu
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('First Love', '2h 27m', 'Comedy|Musical', 12);
 
-
+-- update clientes
 UPDATE Clientes set nome='Stella',sobrenome= 'Bradbrook', email= 'sbradbrook0@wikipedia.org' Where cpf_cliente = 2192522278;
 UPDATE Clientes set nome='Conny',sobrenome= 'Schorah', email= 'cschorah1@gravatar.com' Where cpf_cliente = 2478840783;
 UPDATE Clientes set nome='Bicheno',sobrenome= 'Wat', email= 'wbicheno2@newyorker.com' Where cpf_cliente = 4299279237;
@@ -173,14 +163,14 @@ UPDATE Clientes set nome='Brig',sobrenome= 'Bariball', email= 'bbariball7@earthl
 UPDATE Clientes set nome='Arv',sobrenome= 'Bourget', email= 'abourget8@ow.ly' Where cpf_cliente = 289498763;
 UPDATE Clientes set nome='Uriah',sobrenome= 'Haysey', email= 'uhaysey9@ustream.tv' Where cpf_cliente = 1073437253;
 
+-- delete from clientes
  DELETE FROM Clientes WHERE cpf_cliente = 2192522278;
  DELETE FROM Clientes WHERE cpf_cliente = 2478840783;
  DELETE FROM Clientes WHERE cpf_cliente = 4299279237;
  DELETE FROM Clientes WHERE cpf_cliente = 7117366372;
  DELETE FROM Clientes WHERE cpf_cliente = 6038105963;
 
-
-
+-- update proutoras
 UPDATE Produtoras set produtor='Jocelyn Dingate' , pais='Indonesia' WHERE cnpj= 71967471012;
 UPDATE Produtoras set produtor='Aurie Grinnikov' , pais='Slovenia' WHERE cnpj= 68777958193;
 UPDATE Produtoras set produtor='Sonni Lexa' , pais='Portugal' WHERE cnpj= 65955405334;
@@ -192,6 +182,7 @@ UPDATE Produtoras set produtor='Vinny MacKenney' , pais='Indonesia' WHERE cnpj= 
 UPDATE Produtoras set produtor='Kerby Ciccarelli' , pais='Sweden' WHERE cnpj= 37134067527;
 UPDATE Produtoras set produtor='Logan Treherne' , pais='France' WHERE cnpj= 14707903858;
 
+-- delete from produtoras
   DELETE FROM Produtoras WHERE cnpj = 71967471012;
   DELETE FROM Produtoras WHERE cnpj = 68777958193;
   DELETE FROM Produtoras WHERE cnpj = 65955405334;
