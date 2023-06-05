@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `Filmes` (
 );
 
 CREATE TABLE IF NOT EXISTS `Sessoes` (
-  `id_sessao` INT NOT NULL,
+  `id_sessao` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `horario` DATETIME NOT NULL,
   `sala` INT NOT NULL,
   `Filmes_id_filme` INT NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `Sessoes` (
 );
 
 CREATE TABLE IF NOT EXISTS `Ingressos` (
-  `id_ingresso` INT NOT NULL,
+  `id_ingresso` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `tipo_ingresso` VARCHAR(45) NOT NULL,
   `preco` DOUBLE NOT NULL,
   `quantidade` INT NOT NULL,
@@ -150,6 +150,33 @@ insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) valu
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('First Love', '2h 27m', 'Comedy|Musical', 12);
+
+-- insert into ingressos
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (1, 'Inteiro', 25, 1);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (2, 'Meia-entrada', 15, 1);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (3, 'Inteiro', 25, 3);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (4, 'Inteiro', 25, 5);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (5, 'Inteiro', 25, 2);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (6, 'Meia-entrada', 15, 7);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (7, 'Inteiro', 25, 3);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (8, 'Meia-entrada', 15, 7);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (9, 'Meia-entrada', 15, 6);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (10, 'Meia-entrada', 15, 5);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (11, 'Meia-entrada', 15, 4);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (12, 'Inteiro', 25, 8);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (13, 'Inteiro', 25, 8);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (14, 'Inteiro', 25, 6);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (15, 'Meia-entrada', 15, 4);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (16, 'Inteiro', 25, 7);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (17, 'Inteiro', 25, 4);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (18, 'Meia-entrada', 15, 1);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (19, 'Inteiro', 25, 4);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (20, 'Meia-entrada', 15, 7);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (21, 'Inteiro', 25, 8);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (22, 'Inteiro', 25, 6);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (23, 'Inteiro', 25, 8);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (24, 'Inteiro', 25, 4);
+insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (25, 'Inteiro', 25, 7);
 
 -- update clientes
 UPDATE Clientes set nome='Stella',sobrenome= 'Bradbrook', email= 'sbradbrook0@wikipedia.org' Where cpf_cliente = 2192522278;
