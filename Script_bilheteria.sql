@@ -178,6 +178,33 @@ insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (23
 insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (24, 'Inteiro', 25, 4);
 insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (25, 'Inteiro', 25, 7);
 
+-- insert into sessões
+insert into Sessoes (horario, sala) values ('22:46', 1);
+insert into Sessoes (horario, sala) values ('17:01', 2);
+insert into Sessoes (horario, sala) values ('12:37', 3);
+insert into Sessoes (horario, sala) values ('19:04', 1);
+insert into Sessoes (horario, sala) values ('13:29', 4);
+insert into Sessoes (horario, sala) values ('16:37', 3);
+insert into Sessoes (horario, sala) values ('13:40', 1);
+insert into Sessoes (horario, sala) values ('12:49', 2);
+insert into Sessoes (horario, sala) values ('16:46', 5);
+insert into Sessoes (horario, sala) values ('22:20', 5);
+insert into Sessoes (horario, sala) values ('12:32', 5);
+insert into Sessoes (horario, sala) values ('14:50', 6);
+insert into Sessoes (horario, sala) values ('15:58', 1);
+insert into Sessoes (horario, sala) values ('22:40', 6);
+insert into Sessoes (horario, sala) values ('16:30', 7);
+insert into Sessoes (horario, sala) values ('19:55', 6);
+insert into Sessoes (horario, sala) values ('16:30', 1);
+insert into Sessoes (horario, sala) values ('22:32', 7);
+insert into Sessoes (horario, sala) values ('15:59', 8);
+insert into Sessoes (horario, sala) values ('20:37', 8);
+insert into Sessoes (horario, sala) values ('19:46', 7);
+insert into Sessoes (horario, sala) values ('12:08', 7);
+insert into Sessoes (horario, sala) values ('16:09', 4);
+insert into Sessoes (horario, sala) values ('17:43', 6);
+insert into Sessoes (horario, sala) values ('18:28', 8);
+
 -- update clientes
 UPDATE Clientes set nome='Stella',sobrenome= 'Bradbrook', email= 'sbradbrook0@wikipedia.org' Where cpf_cliente = 2192522278;
 UPDATE Clientes set nome='Conny',sobrenome= 'Schorah', email= 'cschorah1@gravatar.com' Where cpf_cliente = 2478840783;
