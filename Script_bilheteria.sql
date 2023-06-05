@@ -286,3 +286,10 @@ UPDATE Sessoes set horario= '13:30', sala= 2  Where id_sessao= 7 ;
 UPDATE Sessoes set horario= '12:30', sala= 8  Where id_sessao= 8 ;
 UPDATE Sessoes set horario= '16:40', sala= 3  Where id_sessao= 9 ;
 UPDATE Sessoes set horario= '12:00', sala= 6  Where id_sessao= 10 ;
+
+-- delete sessoes
+DELETE FROM Sessoes WHERE id_sessao = 11;
+DELETE FROM Sessoes WHERE id_sessao = 12;
+DELETE FROM Sessoes WHERE id_sessao= 13;
+DELETE FROM Sessoes WHERE id_sessao = 14;
+DELETE FROM Sessoes WHERE id_sessao = 15;
