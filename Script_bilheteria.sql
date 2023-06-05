@@ -125,31 +125,31 @@ insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Happy Johns'
 insert into Produtoras (produtor, pais, nome_studio, cnpj) values ('Norton Meriguet', 'China', 'Lind-Rutherford', 14707903858);
 
 -- insert into ilmes
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Holes in My Shoes', '2h 40m', 'Documentary', 10);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Have Dreams, Will Travel', '2h 21m', 'Drama|Romance', 16);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Kinbaku', '1h 38m', 'Documentary', 12);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Kahaani', '3h 11m', 'Crime|Drama|Thriller', 10);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Reservoir Dogs', '2h 9m', 'Crime|Mystery|Thriller', 16);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('History Is Made at Night', '1h 20m', 'Drama|Romance', 18);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Princess and the Pony', '1h 50m', 'Children|Drama', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Carpetbaggers, The', '2h 10m', 'Drama', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Smilla''s Sense of Snow', '1h 45m', 'Drama|Thriller', 12);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Crazy/Beautiful', '2h 35m', 'Drama|Romance', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Face of Another, The (Tanin no kao)', '2h 20m', 'Drama|Sci-Fi', 10);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Moon in the Gutter, The (La lune dans le caniveau)', '1h 56m', 'Drama', 16);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Udaan', '2h 10m', 'Drama', 16);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Christmas in August (Palwolui Christmas)', '2h 17m', 'Drama|Romance', 10);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Hear No Evil', '1h 45m', 'Thriller', 10);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Charleston', '2h 59m', 'Comedy|Crime', 18);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Anderson Tapes, The', '1h 30m', 'Crime|Drama|Thriller', 18);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Mummy, The', '2h 15m', 'Action|Adventure|Comedy|Fantasy|Horror|Thriller', 16);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Mr. Magorium''s Wonder Emporium', '1h 49m', 'Children|Comedy|Fantasy', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Dry Summer (Susuz yaz) (Reflections)', '2h 13m', 'Drama', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Drummer-Crab (Le Crabe-Tambour)', '3h 10m', 'Adventure|Drama|War', 17);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Yertle the Turtle and Other Stories', '1h 37m', 'Animation|Children', 10);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('First Love', '2h 27m', 'Comedy|Musical', 12);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Holes in My Shoes', '2h 40m', 'Documentary', 10);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Have Dreams, Will Travel', '2h 21m', 'Drama|Romance', 16);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Kinbaku', '1h 38m', 'Documentary', 12);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Kahaani', '3h 11m', 'Crime|Drama|Thriller', 10);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Reservoir Dogs', '2h 9m', 'Crime|Mystery|Thriller', 16);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('History Is Made at Night', '1h 20m', 'Drama|Romance', 18);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Princess and the Pony', '1h 50m', 'Children|Drama', 14);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Carpetbaggers, The', '2h 10m', 'Drama', 14);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Smilla''s Sense of Snow', '1h 45m', 'Drama|Thriller', 12);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Crazy/Beautiful', '2h 35m', 'Drama|Romance', 14);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Face of Another, The (Tanin no kao)', '2h 20m', 'Drama|Sci-Fi', 10);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Moon in the Gutter, The (La lune dans le caniveau)', '1h 56m', 'Drama', 16);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Udaan', '2h 10m', 'Drama', 16);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Christmas in August (Palwolui Christmas)', '2h 17m', 'Drama|Romance', 10);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Hear No Evil', '1h 45m', 'Thriller', 10);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Charleston', '2h 59m', 'Comedy|Crime', 18);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Anderson Tapes, The', '1h 30m', 'Crime|Drama|Thriller', 18);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Mummy, The', '2h 15m', 'Action|Adventure|Comedy|Fantasy|Horror|Thriller', 16);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Mr. Magorium''s Wonder Emporium', '1h 49m', 'Children|Comedy|Fantasy', 14);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Dry Summer (Susuz yaz) (Reflections)', '2h 13m', 'Drama', 14);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Drummer-Crab (Le Crabe-Tambour)', '3h 10m', 'Adventure|Drama|War', 18);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Yertle the Turtle and Other Stories', '1h 37m', 'Animation|Children', 10);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
+insert into Filmes (id_filme, nome_filme, duracao, genero_filme, classificacao_etaria) values ('First Love', '2h 27m', 'Comedy|Musical', 12);
 
 -- insert into ingressos
 insert into Ingressos (id_ingresso, tipo_ingresso, preco, quantidade) values (1, 'Inteiro', 25, 1);
