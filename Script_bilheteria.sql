@@ -213,8 +213,8 @@ SELECT * FROM Clientes;
 SELECT COUNT(*) FROM Produtoras; 
 SELECT * FROM Produtoras;
 
-
-
+SELECT COUNT(*) FROM Filmes;
+SELECT * FROM Filmes;
 
 
 -- update clientes
