@@ -274,3 +274,15 @@ UPDATE Filmes set nome_filme = 'O Gato de Botas', duracao = '2h 20m', genero_fil
   DELETE FROM Filmes WHERE id_filme = 13;
   DELETE FROM Filmes WHERE id_filme = 14;
   DELETE FROM Filmes WHERE id_filme = 15;
+  
+  -- update sessoes
+UPDATE Sessoes set horario= '22:45', sala= 2  Where id_sessao= 1 ;
+UPDATE Sessoes set horario= '17:00', sala= 1  Where id_sessao= 2 ;
+UPDATE Sessoes set horario= '12:30', sala= 4  Where id_sessao= 3 ;
+UPDATE Sessoes set horario= '19:00', sala= 3  Where id_sessao= 4 ;
+UPDATE Sessoes set horario= '13:30', sala= 3  Where id_sessao= 5 ;
+UPDATE Sessoes set horario= '16:30', sala= 5  Where id_sessao= 6 ;
+UPDATE Sessoes set horario= '13:30', sala= 2  Where id_sessao= 7 ;
+UPDATE Sessoes set horario= '12:30', sala= 8  Where id_sessao= 8 ;
+UPDATE Sessoes set horario= '16:40', sala= 3  Where id_sessao= 9 ;
+UPDATE Sessoes set horario= '12:00', sala= 6  Where id_sessao= 10 ;
