@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 -- exclui o banco e dados
 Drop database if exists bilheteria; 
 
@@ -324,4 +322,3 @@ UPDATE Sessoes set horario= '2023-06-09 12:00:00', sala= 6  Where id_sessao= 10 
   DELETE FROM Sessoes WHERE id_sessao= 13;
   DELETE FROM Sessoes WHERE id_sessao = 14;
   DELETE FROM Sessoes WHERE id_sessao = 15;
->>>>>>> Stashed changes
