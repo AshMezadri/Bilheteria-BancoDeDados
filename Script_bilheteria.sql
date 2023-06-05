@@ -145,7 +145,7 @@ insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) valu
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Mummy, The', '2h 15m', 'Action|Adventure|Comedy|Fantasy|Horror|Thriller', 16);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Mr. Magorium''s Wonder Emporium', '1h 49m', 'Children|Comedy|Fantasy', 14);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Dry Summer (Susuz yaz) (Reflections)', '2h 13m', 'Drama', 14);
-insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Drummer-Crab (Le Crabe-Tambour)', '3h 10m', 'Adventure|Drama|War',107);
+insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Drummer-Crab (Le Crabe-Tambour)', '3h 10m', 'Adventure|Drama|War', 17);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Yertle the Turtle and Other Stories', '1h 37m', 'Animation|Children', 10);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Gentlemen', '1h 58m', 'Drama|Romance|Thriller', 14);
 insert into Filmes (nome_filme, duracao, genero_filme, classiicacao_etaria) values ('Bullhead (Rundskop)', '1h 40m', 'Crime|Drama', 18);
