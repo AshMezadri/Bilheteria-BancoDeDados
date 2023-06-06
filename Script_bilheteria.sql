@@ -231,10 +231,10 @@ insert into Ingressos (tipo_ingresso, preco, quantidade, Clientes_cpf_cliente, S
 
 -- selects
 SELECT COUNT(*) FROM Clientes; 
-SELECT * FROM Clientes;
+SELECT * FROM Clientes order by cpf_cliente ;
 
 SELECT COUNT(*) FROM Produtoras; 
-SELECT * FROM Produtoras;
+SELECT * FROM Produtoras order by id_produtora;
 
 SELECT COUNT(*) FROM Filmes;
 SELECT * FROM Filmes;
