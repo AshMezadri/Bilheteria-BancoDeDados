@@ -237,13 +237,18 @@ SELECT COUNT(*) FROM Produtoras;
 SELECT * FROM Produtoras order by id_produtora;
 
 SELECT COUNT(*) FROM Filmes;
-SELECT * FROM Filmes;
+SELECT * FROM Filmes order by id_filme;
 
 SELECT COUNT(*) FROM Sessoes;
 Select * From Sessoes order by id_sessao;
 
 SELECT COUNT(*) FROM Ingressos;
-Select * From Ingressos;
+Select * From Ingressos order by id_ingresso;
+
+SELECT Ingressos.id_ingresso, Ingressos.tipo_ingresso, Ingressos.preco, Ingressos.quantidade,
+       Clientes.cpf_cliente, Clientes.email, Clientes.nome, Clientes.sobrenome
+FROM Ingressos
+INNER JOIN Clientes ON Ingressos.Clientes_cpf_cliente = Clientes.cpf_cliente;
 
 -- updates
 -- update clientes
@@ -294,31 +299,50 @@ UPDATE Sessoes set horario= '2023-06-08 12:30:00', sala= 8  Where id_sessao= 8 ;
 UPDATE Sessoes set horario= '2023-06-09 16:40:00', sala= 3  Where id_sessao= 9 ;
 UPDATE Sessoes set horario= '2023-06-09 12:00:00', sala= 6  Where id_sessao= 10 ;
 
+-- update ingressos
+UPDATE Ingressos set quantidade= '1' Where id_ingresso = 1 ;
+UPDATE Ingressos set quantidade= '2' Where id_ingresso = 2 ;
+UPDATE Ingressos set quantidade= '3' Where id_ingresso = 3 ;
+UPDATE Ingressos set quantidade= '7' Where id_ingresso = 4 ;
+UPDATE Ingressos set quantidade= '5' Where id_ingresso = 5 ;
+UPDATE Ingressos set quantidade= '2' Where id_ingresso = 6 ;
+UPDATE Ingressos set quantidade= '8' Where id_ingresso = 7 ;
+UPDATE Ingressos set quantidade= '1' Where id_ingresso = 8 ;
+UPDATE Ingressos set quantidade= '6' Where id_ingresso = 9 ;
+UPDATE Ingressos set quantidade= '3' Where id_ingresso = 10 ;
+
 -- deletes
+-- delete ingressos
+  DELETE FROM Ingressos WHERE id_ingresso = 1;
+  DELETE FROM Ingressos WHERE id_ingresso = 2;
+  DELETE FROM Ingressos WHERE id_ingresso= 3;
+  DELETE FROM Ingressos WHERE id_ingresso = 4;
+  DELETE FROM Ingressos WHERE id_ingresso = 5;
+  
+ -- delete sessoes
+  DELETE FROM Sessoes WHERE id_sessao = 1;
+  DELETE FROM Sessoes WHERE id_sessao = 2;
+  DELETE FROM Sessoes WHERE id_sessao= 3;
+  DELETE FROM Sessoes WHERE id_sessao = 4;
+  DELETE FROM Sessoes WHERE id_sessao = 5;
+  
+-- delete from filmes
+  DELETE FROM Filmes WHERE id_filme = 1;
+  DELETE FROM Filmes WHERE id_filme = 2;
+  DELETE FROM Filmes WHERE id_filme = 3;
+  DELETE FROM Filmes WHERE id_filme = 4;
+  DELETE FROM Filmes WHERE id_filme = 5;
+  
 -- delete from produtoras
   DELETE FROM Produtoras WHERE  id_produtora = 1;
-  DELETE FROM Produtoras WHERE id_produtora=4;
-  DELETE FROM Produtoras WHERE id_produtora=8;
-  DELETE FROM Produtoras WHERE  id_produtora=10;
-  DELETE FROM Produtoras WHERE id_produtora=6;
+  DELETE FROM Produtoras WHERE id_produtora=2;
+  DELETE FROM Produtoras WHERE id_produtora=3;
+  DELETE FROM Produtoras WHERE  id_produtora=4;
+  DELETE FROM Produtoras WHERE id_produtora=5;
   
   -- delete from clientes
  DELETE FROM Clientes WHERE cpf_cliente = 2192522278;
  DELETE FROM Clientes WHERE cpf_cliente = 2478840783;
  DELETE FROM Clientes WHERE cpf_cliente = 4299279237;
- DELETE FROM Clientes WHERE cpf_cliente = 7117366372;
- DELETE FROM Clientes WHERE cpf_cliente = 6038105963;
-
-  -- delete from filmes
-  DELETE FROM Filmes WHERE id_filme = 11;
-  DELETE FROM Filmes WHERE id_filme = 12;
-  DELETE FROM Filmes WHERE id_filme = 13;
-  DELETE FROM Filmes WHERE id_filme = 14;
-  DELETE FROM Filmes WHERE id_filme = 15;
-  
-  -- delete sessoes
-  DELETE FROM Sessoes WHERE id_sessao = 11;
-  DELETE FROM Sessoes WHERE id_sessao = 12;
-  DELETE FROM Sessoes WHERE id_sessao= 13;
-  DELETE FROM Sessoes WHERE id_sessao = 14;
-  DELETE FROM Sessoes WHERE id_sessao = 15;
+ DELETE FROM Clientes WHERE cpf_cliente = 4924545468;
+ DELETE FROM Clientes WHERE cpf_cliente = 1251259305;
