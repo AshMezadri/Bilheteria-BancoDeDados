@@ -9,7 +9,7 @@ Esse é um banco de dados para uma bilheteria. É possível ver as informações
 </p>
 
 ## Membros
-Ash Armanini Mezadri 
-Gabriele Bratfisch Krieck
-Letícia de Lima da Cunha
-Maria Eduarda Maaffezzolli
+Ash Armanini Mezadri  
+Gabriele Bratfisch Krieck  
+Letícia de Lima da Cunha  
+Maria Eduarda Maaffezzolli  
